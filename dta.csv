@@ -1,0 +1,333 @@
+"","Instructor","Major","Grade","Gender","Race","Pell","1st Generation","Score","Treatment","Std_Score"
+"1","Kebede, Temesgen","Biology","A",1,0,0,0,90,0,1.17256672182597
+"2","Whelchel, Noel","Biology","A",1,0,0,0,90,0,1.17256672182597
+"3","Whelchel, Noel","Computer Science","B",0,0,0,0,80,0,0.448975361888755
+"4","Kebede, Temesgen","Computer and Information Sys","F",0,0,0,0,50,0,-1.7217987179229
+"5","Djire, Bakary","Computer and Information Sys","D",0,0,0,0,60,0,-0.99820735798568
+"6","Djire, Bakary","Computer and Information Sys","A",0,0,0,0,90,0,1.17256672182597
+"7","Jackson, Calvin","Chemistry","C",0,0,0,0,70,0,-0.274615998048463
+"8","Djire, Bakary","Psychology","B",1,1,0,0,80,0,0.448975361888755
+"9","Slaughter, Keenan","Biology","B",1,1,0,0,80,0,0.448975361888755
+"10","Lewis, Torina","Psychology - BS Degree","B",1,1,0,0,80,0,0.448975361888755
+"11","Slaughter, Keenan","Psychology","A",1,1,0,0,90,0,1.17256672182597
+"12","Whelchel, Noel","Biology","B",1,1,0,0,80,0,0.448975361888755
+"13","Jackson, Calvin","Dual Deg Engineer- Comp Sci","D",1,1,0,0,60,0,-0.99820735798568
+"14","Slaughter, Keenan","Biology","C",1,1,0,0,70,0,-0.274615998048463
+"15","Slaughter, Keenan","Dual Deg Engineer - Chemistry","A",1,1,0,0,90,0,1.17256672182597
+"16","Slaughter, Keenan","Biology","C",1,1,0,0,70,0,-0.274615998048463
+"17","Slaughter, Keenan","Biology","A",1,1,0,0,90,0,1.17256672182597
+"18","Lewis, Torina","Biology","A",1,1,0,0,90,0,1.17256672182597
+"19","Kebede, Temesgen","Mathematics","A",1,1,0,0,90,0,1.17256672182597
+"20","Lewis, Torina","Biology","B",1,1,0,0,80,0,0.448975361888755
+"21","Slaughter, Keenan","Biology","C",1,1,0,0,70,0,-0.274615998048463
+"22","Slaughter, Keenan","Biology","F",1,1,0,0,50,0,-1.7217987179229
+"23","Whelchel, Noel","Biology","C",1,1,0,0,70,0,-0.274615998048463
+"24","Jackson, Calvin","Computer Science","C",1,1,0,0,70,0,-0.274615998048463
+"25","Whelchel, Noel","Biology","A",1,1,0,0,90,0,1.17256672182597
+"26","Kebede, Temesgen","Biology","F",1,1,0,0,50,0,-1.7217987179229
+"27","Kebede, Temesgen","Biology - Public Health","F",1,1,0,0,50,0,-1.7217987179229
+"28","Whelchel, Noel","Biology","A",1,1,0,0,90,0,1.17256672182597
+"29","Lewis, Torina","Dual Deg Engineer- Comp Sci","B",0,1,0,0,80,0,0.448975361888755
+"30","Kebede, Temesgen","Biology","C",1,1,0,0,70,0,-0.274615998048463
+"31","Slaughter, Keenan","Biology","A",1,1,0,0,90,0,1.17256672182597
+"32","Kebede, Temesgen","Biology","F",1,1,0,0,50,0,-1.7217987179229
+"33","Whelchel, Noel","Biology","A",1,1,0,0,90,0,1.17256672182597
+"34","Whelchel, Noel","Biology","A",1,1,0,0,90,0,1.17256672182597
+"35","Harlemon, Maxine","Psychology - BS Degree","D",1,1,0,0,60,0,-0.99820735798568
+"36","Lewis, Torina","Computer and Information Sys","F",0,0,0,0,50,0,-1.7217987179229
+"37","Harlemon, Maxine","Biology","B",1,1,0,0,80,0,0.448975361888755
+"38","Slaughter, Keenan","Biology","B",1,1,0,0,80,0,0.448975361888755
+"39","Slaughter, Keenan","Biology","B",1,1,0,0,80,0,0.448975361888755
+"40","Djire, Bakary","Dual Deg Engineer - Physics","A",1,1,0,0,90,0,1.17256672182597
+"41","Djire, Bakary","Psychology - BS Degree","B",1,1,0,0,80,0,0.448975361888755
+"42","Parker, Cassandra","English","C",1,1,0,0,70,0,-0.274615998048463
+"43","Lewis, Torina","Dual Deg Engineer - Physics","C",1,1,0,0,70,0,-0.274615998048463
+"44","Lewis, Torina","Dual Deg Engineer - Chemistry","B",1,1,0,1,80,0,0.448975361888755
+"45","Parker, Cassandra","Dual Deg Engineer- Comp Sci","F",1,1,0,0,50,0,-1.7217987179229
+"46","Parker, Cassandra","Business Administration","C",1,1,0,0,70,0,-0.274615998048463
+"47","Lewis, Torina","Dual Deg Engineer - Physics","B",0,1,0,1,80,0,0.448975361888755
+"48","Parker, Cassandra","Business Administration","F",1,1,0,0,50,0,-1.7217987179229
+"49","Djire, Bakary","Biology","A",1,1,0,0,90,0,1.17256672182597
+"50","Djire, Bakary","Biology","B",1,1,0,0,80,0,0.448975361888755
+"51","Lewis, Torina","Dual Deg Engineer - Physics","D",0,1,0,1,60,0,-0.99820735798568
+"52","Slaughter, Keenan","Computer Science","C",0,1,0,0,70,0,-0.274615998048463
+"53","Jalloh, Mohamed","Computer Science","A",0,1,0,0,90,0,1.17256672182597
+"54","Whelchel, Noel","Computer Science","C",0,1,0,0,70,0,-0.274615998048463
+"55","Jackson, Calvin","Chemistry","F",0,1,0,0,50,0,-1.7217987179229
+"56","Slaughter, Keenan","Computer and Information Sys","A",0,1,0,0,90,0,1.17256672182597
+"57","Slaughter, Keenan","Computer Science","A",0,1,0,0,90,0,1.17256672182597
+"58","Kebede, Temesgen","Biology","C",0,1,0,0,70,0,-0.274615998048463
+"59","Jalloh, Mohamed","Computer and Information Sys","F",0,1,0,0,50,0,-1.7217987179229
+"60","Jackson, Calvin","Dual Deg Engineer- Comp Sci","B",0,1,0,0,80,0,0.448975361888755
+"61","Whelchel, Noel","Computer Science","F",0,1,0,0,50,0,-1.7217987179229
+"62","Parker, Cassandra","Accounting","F",0,1,0,0,50,0,-1.7217987179229
+"63","Jalloh, Mohamed","Biology","F",0,1,0,0,50,0,-1.7217987179229
+"64","Whelchel, Noel","Biology","A",0,1,0,0,90,0,1.17256672182597
+"65","Lewis, Torina","Biology","A",1,1,1,0,90,0,1.17256672182597
+"66","Lewis, Torina","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"67","Lewis, Torina","Biology","A",1,1,1,0,90,0,1.17256672182597
+"68","Parker, Cassandra","Biology","F",0,1,0,0,50,0,-1.7217987179229
+"69","Harlemon, Maxine","Biology","F",0,1,0,0,50,0,-1.7217987179229
+"70","Slaughter, Keenan","Computer Science","B",0,0,0,0,80,0,0.448975361888755
+"71","Slaughter, Keenan","Biology","C",1,0,0,0,70,0,-0.274615998048463
+"72","Kebede, Temesgen","Chemistry","A",1,0,0,0,90,0,1.17256672182597
+"73","Kebede, Temesgen","Computer Science","F",0,0,0,0,50,0,-1.7217987179229
+"74","Djire, Bakary","Computer and Information Sys","A",0,0,0,0,90,0,1.17256672182597
+"75","Whelchel, Noel","Computer and Information Sys","A",0,0,0,0,90,0,1.17256672182597
+"76","Djire, Bakary","Computer and Information Sys","A",0,0,0,0,90,0,1.17256672182597
+"77","Djire, Bakary","Computer and Information Sys","B",0,0,0,0,80,0,0.448975361888755
+"78","Lewis, Torina","Biology","D",1,1,1,0,60,0,-0.99820735798568
+"79","Parker, Cassandra","Computer Science","D",0,0,0,0,60,0,-0.99820735798568
+"80","Whelchel, Noel","Computer and Information Sys","A",0,0,0,0,90,0,1.17256672182597
+"81","Lewis, Torina","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"82","Whelchel, Noel","Biology","A",1,1,0,0,90,0,1.17256672182597
+"83","Jalloh, Mohamed","Biology","A",1,0,0,0,90,0,1.17256672182597
+"84","Lewis, Torina","Biology - Public Health","D",1,1,1,0,60,0,-0.99820735798568
+"85","Whelchel, Noel","Business Administration","A",1,0,0,0,90,0,1.17256672182597
+"86","Kebede, Temesgen","Computer and Information Sys","F",0,1,0,0,50,0,-1.7217987179229
+"87","Jalloh, Mohamed","Business Administration","A",0,0,0,0,90,0,1.17256672182597
+"88","Djire, Bakary","Computer and Information Sys","D",0,0,0,0,60,0,-0.99820735798568
+"89","Whelchel, Noel","Computer and Information Sys","B",0,0,0,0,80,0,0.448975361888755
+"90","Djire, Bakary","Computer and Information Sys","B",0,0,0,0,80,0,0.448975361888755
+"91","Whelchel, Noel","Computer and Information Sys","C",0,0,0,0,70,0,-0.274615998048463
+"92","Whelchel, Noel","Criminal Justice Admin","B",0,0,0,0,80,0,0.448975361888755
+"93","Jalloh, Mohamed","Accounting","A",0,0,0,0,90,0,1.17256672182597
+"94","Jalloh, Mohamed","Computer and Information Sys","A",0,0,0,0,90,0,1.17256672182597
+"95","Whelchel, Noel","Computer and Information Sys","A",0,0,0,0,90,0,1.17256672182597
+"96","Jalloh, Mohamed","Business Administration","A",0,0,0,0,90,0,1.17256672182597
+"97","Lewis, Torina","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"98","Whelchel, Noel","Computer and Information Sys","A",0,0,0,0,90,0,1.17256672182597
+"99","Whelchel, Noel","Business Administration","A",0,0,0,0,90,0,1.17256672182597
+"100","Kebede, Temesgen","Business Administration","C",0,0,0,0,70,0,-0.274615998048463
+"101","Lewis, Torina","Dual Deg Engineer - Physics","C",0,1,1,0,70,0,-0.274615998048463
+"102","Jackson, Calvin","Biology","F",1,1,0,1,50,0,-1.7217987179229
+"103","Whelchel, Noel","Biology","F",1,1,0,1,50,0,-1.7217987179229
+"104","Kebede, Temesgen","Biology","F",1,1,0,1,50,0,-1.7217987179229
+"105","Whelchel, Noel","Biology","C",1,1,0,1,70,0,-0.274615998048463
+"106","Whelchel, Noel","Biology","C",1,1,0,1,70,0,-0.274615998048463
+"107","Djire, Bakary","Biology","D",1,1,0,1,60,0,-0.99820735798568
+"108","Harlemon, Maxine","Psychology - BS Degree","D",1,1,0,1,60,0,-0.99820735798568
+"109","Djire, Bakary","Biology","B",1,1,0,1,80,0,0.448975361888755
+"110","Djire, Bakary","Psychology","A",1,1,0,1,90,0,1.17256672182597
+"111","Lewis, Torina","Dual Deg Engineer - Chemistry","D",0,1,1,0,60,0,-0.99820735798568
+"112","Lewis, Torina","Computer Science","B",1,1,1,0,80,0,0.448975361888755
+"113","Jackson, Calvin","General Studies","A",0,0,0,1,90,0,1.17256672182597
+"114","Harlemon, Maxine","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"115","Jackson, Calvin","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"116","Kebede, Temesgen","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"117","Slaughter, Keenan","Biology","B",1,1,1,0,80,0,0.448975361888755
+"118","Lewis, Torina","Biology","A",1,1,1,0,90,0,1.17256672182597
+"119","Kebede, Temesgen","Biology - Public Health","A",1,1,1,0,90,0,1.17256672182597
+"120","Lewis, Torina","Computer Science","F",0,1,1,0,50,0,-1.7217987179229
+"121","Kebede, Temesgen","Business Administration","B",1,1,1,0,80,0,0.448975361888755
+"122","Whelchel, Noel","Biology","D",1,1,1,0,60,0,-0.99820735798568
+"123","Jackson, Calvin","Mathematics","A",1,1,1,0,90,0,1.17256672182597
+"124","Jackson, Calvin","Business Administration","C",1,1,1,0,70,0,-0.274615998048463
+"125","Kebede, Temesgen","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"126","Jalloh, Mohamed","Biology","B",1,1,1,0,80,0,0.448975361888755
+"127","Whelchel, Noel","Dual Deg Engineer- Comp Sci","C",1,1,1,0,70,0,-0.274615998048463
+"128","Kebede, Temesgen","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"129","Whelchel, Noel","Biology","A",1,1,1,0,90,0,1.17256672182597
+"130","Whelchel, Noel","Biology","A",1,1,1,0,90,0,1.17256672182597
+"131","Kebede, Temesgen","Biology","F",1,1,1,0,50,0,-1.7217987179229
+"132","Whelchel, Noel","Business Administration","C",1,1,1,0,70,0,-0.274615998048463
+"133","Slaughter, Keenan","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"134","Kebede, Temesgen","Biology","B",1,1,1,0,80,0,0.448975361888755
+"135","Whelchel, Noel","Biology","A",1,1,1,0,90,0,1.17256672182597
+"136","Slaughter, Keenan","Psychology","B",1,1,1,0,80,0,0.448975361888755
+"137","Jackson, Calvin","Chemistry","F",1,1,1,0,50,0,-1.7217987179229
+"138","Lewis, Torina","General Studies","B",1,1,1,1,80,0,0.448975361888755
+"139","Jalloh, Mohamed","Biology","B",1,1,1,0,80,0,0.448975361888755
+"140","Jackson, Calvin","Dual Deg Engineer - Physics","F",1,1,1,0,50,0,-1.7217987179229
+"141","Jackson, Calvin","Biology","F",1,1,1,0,50,0,-1.7217987179229
+"142","Whelchel, Noel","Early Childhood Education","B",1,1,1,0,80,0,0.448975361888755
+"143","Kebede, Temesgen","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"144","Whelchel, Noel","Biology","B",1,1,1,0,80,0,0.448975361888755
+"145","Harlemon, Maxine","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"146","Slaughter, Keenan","Biology","A",1,1,1,0,90,0,1.17256672182597
+"147","Lewis, Torina","Dual Deg Engineer- Comp Sci","B",1,1,1,1,80,0,0.448975361888755
+"148","Whelchel, Noel","Biology","A",1,1,1,0,90,0,1.17256672182597
+"149","Harlemon, Maxine","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"150","Djire, Bakary","Psychology - BS Degree","A",1,1,1,0,90,0,1.17256672182597
+"151","Parker, Cassandra","Biology","D",1,1,1,0,60,0,-0.99820735798568
+"152","Parker, Cassandra","Chemistry","C",1,1,1,0,70,0,-0.274615998048463
+"153","Kebede, Temesgen","Accounting","A",1,1,1,0,90,0,1.17256672182597
+"154","Jackson, Calvin","Biology","F",1,1,1,0,50,0,-1.7217987179229
+"155","Jalloh, Mohamed","Biology","A",1,1,1,0,90,0,1.17256672182597
+"156","Parker, Cassandra","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"157","Lewis, Torina","Biology","B",1,1,1,1,80,0,0.448975361888755
+"158","Kebede, Temesgen","Biology","B",1,1,1,0,80,0,0.448975361888755
+"159","Parker, Cassandra","Biology","D",1,1,1,0,60,0,-0.99820735798568
+"160","Whelchel, Noel","Biology","B",1,1,1,0,80,0,0.448975361888755
+"161","Whelchel, Noel","Biology","A",1,1,1,0,90,0,1.17256672182597
+"162","Lewis, Torina","Biology","A",1,1,1,1,90,0,1.17256672182597
+"163","Lewis, Torina","Dual Deg Engineer - Physics","B",0,1,1,1,80,0,0.448975361888755
+"164","Harlemon, Maxine","Chemistry","C",1,1,1,0,70,0,-0.274615998048463
+"165","Whelchel, Noel","Biology","B",1,1,1,0,80,0,0.448975361888755
+"166","Lewis, Torina","Biology","B",1,1,0,0,80,1,0.448975361888755
+"167","Jalloh, Mohamed","Computer Science","A",1,1,1,0,90,0,1.17256672182597
+"168","Parker, Cassandra","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"169","Djire, Bakary","Biology","B",1,1,1,0,80,0,0.448975361888755
+"170","Harlemon, Maxine","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"171","Parker, Cassandra","Criminal Justice Admin","C",1,1,1,0,70,0,-0.274615998048463
+"172","Parker, Cassandra","Biology","B",1,1,1,0,80,0,0.448975361888755
+"173","Parker, Cassandra","General Studies","C",1,1,1,0,70,0,-0.274615998048463
+"174","Harlemon, Maxine","Biology","F",1,1,1,0,50,0,-1.7217987179229
+"175","Parker, Cassandra","Biology","D",1,1,1,0,60,0,-0.99820735798568
+"176","Harlemon, Maxine","Biology","B",1,1,1,0,80,0,0.448975361888755
+"177","Lewis, Torina","Computer Science","C",1,1,0,0,70,1,-0.274615998048463
+"178","Harlemon, Maxine","Dual Deg Engineer - Physics","C",1,1,1,0,70,0,-0.274615998048463
+"179","Harlemon, Maxine","Computer Science","A",1,1,1,0,90,0,1.17256672182597
+"180","Harlemon, Maxine","Biology","C",1,1,1,0,70,0,-0.274615998048463
+"181","Djire, Bakary","Chemistry","A",1,1,1,0,90,0,1.17256672182597
+"182","Djire, Bakary","Chemistry","B",1,1,1,0,80,0,0.448975361888755
+"183","Lewis, Torina","Biology","B",1,1,0,0,80,1,0.448975361888755
+"184","Lewis, Torina","Computer Science","B",1,1,0,0,80,1,0.448975361888755
+"185","Lewis, Torina","Biology","D",1,1,0,0,60,1,-0.99820735798568
+"186","Lewis, Torina","Biology","C",1,1,0,0,70,1,-0.274615998048463
+"187","Djire, Bakary","Biology","B",0,1,1,0,80,0,0.448975361888755
+"188","Slaughter, Keenan","Biology","B",0,1,1,0,80,0,0.448975361888755
+"189","Kebede, Temesgen","Dual Deg Engineer - Chemistry","C",0,1,1,0,70,0,-0.274615998048463
+"190","Slaughter, Keenan","Biology","B",0,1,1,0,80,0,0.448975361888755
+"191","Lewis, Torina","Computer Science","B",0,1,0,0,80,1,0.448975361888755
+"192","Whelchel, Noel","Computer Science","F",0,1,1,0,50,0,-1.7217987179229
+"193","Slaughter, Keenan","Biology","A",0,1,1,0,90,0,1.17256672182597
+"194","Jackson, Calvin","Dual Deg Engineer - Physics","D",0,1,1,0,60,0,-0.99820735798568
+"195","Jalloh, Mohamed","Dual Deg Engineer - Chemistry","B",0,1,1,0,80,0,0.448975361888755
+"196","Whelchel, Noel","Dual Deg Engineer- Comp Sci","A",0,1,1,0,90,0,1.17256672182597
+"197","Slaughter, Keenan","Biology","B",0,1,1,0,80,0,0.448975361888755
+"198","Slaughter, Keenan","Computer Science","C",0,1,1,0,70,0,-0.274615998048463
+"199","Whelchel, Noel","Computer Science","A",0,1,1,0,90,0,1.17256672182597
+"200","Jackson, Calvin","Chemistry","F",0,1,1,0,50,0,-1.7217987179229
+"201","Slaughter, Keenan","Computer Science","B",0,1,1,0,80,0,0.448975361888755
+"202","Whelchel, Noel","Computer and Information Sys","B",0,1,1,0,80,0,0.448975361888755
+"203","Kebede, Temesgen","Computer Science","B",0,1,1,0,80,0,0.448975361888755
+"204","Whelchel, Noel","Computer and Information Sys","A",0,1,1,0,90,0,1.17256672182597
+"205","Lewis, Torina","Computer and Information Sys","F",0,1,0,0,50,1,-1.7217987179229
+"206","Harlemon, Maxine","Business Administration","D",0,1,1,0,60,0,-0.99820735798568
+"207","Parker, Cassandra","Business Administration","C",0,1,1,0,70,0,-0.274615998048463
+"208","Jalloh, Mohamed","Computer and Information Sys","A",0,1,1,0,90,0,1.17256672182597
+"209","Slaughter, Keenan","Dual Deg Engineer - Physics","A",0,1,1,0,90,0,1.17256672182597
+"210","Lewis, Torina","Computer Science","F",0,0,0,0,50,1,-1.7217987179229
+"211","Slaughter, Keenan","Biology","C",0,1,1,0,70,0,-0.274615998048463
+"212","Slaughter, Keenan","Computer and Information Sys","A",0,1,1,0,90,0,1.17256672182597
+"213","Whelchel, Noel","Dual Deg Engineer- Comp Sci","A",0,1,1,0,90,0,1.17256672182597
+"214","Whelchel, Noel","Computer and Information Sys","B",0,1,1,0,80,0,0.448975361888755
+"215","Parker, Cassandra","Computer Science","C",0,1,1,0,70,0,-0.274615998048463
+"216","Harlemon, Maxine","Dual Degree-Biology","B",0,1,1,0,80,0,0.448975361888755
+"217","Lewis, Torina","Computer and Information Sys","F",0,0,0,0,50,1,-1.7217987179229
+"218","Parker, Cassandra","Computer Science","C",0,1,1,0,70,0,-0.274615998048463
+"219","Lewis, Torina","Biology","C",1,1,1,0,70,1,-0.274615998048463
+"220","Djire, Bakary","Dual Deg Engineer - Physics","A",0,1,1,0,90,0,1.17256672182597
+"221","Harlemon, Maxine","Business Administration","F",0,1,1,0,50,0,-1.7217987179229
+"222","Parker, Cassandra","Biology","F",1,0,1,0,50,0,-1.7217987179229
+"223","Whelchel, Noel","Computer Science","B",1,0,1,0,80,0,0.448975361888755
+"224","Harlemon, Maxine","Biology","C",1,0,1,0,70,0,-0.274615998048463
+"225","Jalloh, Mohamed","Computer Science","B",0,0,1,0,80,0,0.448975361888755
+"226","Slaughter, Keenan","Business Administration","B",0,0,1,0,80,0,0.448975361888755
+"227","Lewis, Torina","Biology","C",1,1,1,0,70,1,-0.274615998048463
+"228","Jalloh, Mohamed","Biology","A",1,1,1,0,90,0,1.17256672182597
+"229","Kebede, Temesgen","Biology","A",1,1,1,0,90,0,1.17256672182597
+"230","Slaughter, Keenan","Biology","A",1,1,1,0,90,0,1.17256672182597
+"231","Lewis, Torina","Biology","D",1,1,1,0,60,1,-0.99820735798568
+"232","Djire, Bakary","Dual Deg Engineer - Physics","B",1,1,1,0,80,0,0.448975361888755
+"233","Lewis, Torina","Dual Deg Engineer - Chemistry","B",1,1,1,0,80,1,0.448975361888755
+"234","Jackson, Calvin","Computer Science","F",0,1,1,0,50,0,-1.7217987179229
+"235","Parker, Cassandra","Computer Science","F",0,1,1,0,50,0,-1.7217987179229
+"236","Parker, Cassandra","Biology","D",0,1,1,0,60,0,-0.99820735798568
+"237","Harlemon, Maxine","Biology","F",0,1,1,0,50,0,-1.7217987179229
+"238","Parker, Cassandra","Computer Science","D",0,1,1,0,60,0,-0.99820735798568
+"239","Parker, Cassandra","Chemistry","F",1,1,1,1,50,0,-1.7217987179229
+"240","Djire, Bakary","Dual Deg Engineer- Comp Sci","F",1,1,1,1,50,0,-1.7217987179229
+"241","Slaughter, Keenan","Business Administration","C",1,1,1,1,70,0,-0.274615998048463
+"242","Whelchel, Noel","Biology","A",1,1,1,1,90,0,1.17256672182597
+"243","Slaughter, Keenan","Biology","A",1,1,1,1,90,0,1.17256672182597
+"244","Kebede, Temesgen","Biology","B",1,1,1,1,80,0,0.448975361888755
+"245","Jackson, Calvin","Biology","B",1,1,1,1,80,0,0.448975361888755
+"246","Kebede, Temesgen","Biology","C",1,1,1,1,70,0,-0.274615998048463
+"247","Jalloh, Mohamed","Business Administration","F",1,1,1,1,50,0,-1.7217987179229
+"248","Slaughter, Keenan","Biology","B",1,1,1,1,80,0,0.448975361888755
+"249","Jackson, Calvin","Biology","B",1,1,1,1,80,0,0.448975361888755
+"250","Lewis, Torina","Biology","B",1,1,1,0,80,1,0.448975361888755
+"251","Whelchel, Noel","Biology","B",1,1,1,1,80,0,0.448975361888755
+"252","Slaughter, Keenan","Biology","A",1,1,1,1,90,0,1.17256672182597
+"253","Slaughter, Keenan","Biology","B",1,1,1,1,80,0,0.448975361888755
+"254","Lewis, Torina","Psychology","B",1,1,1,0,80,1,0.448975361888755
+"255","Slaughter, Keenan","Biology","B",1,1,1,1,80,0,0.448975361888755
+"256","Jackson, Calvin","Biology - Public Health","F",1,1,1,1,50,0,-1.7217987179229
+"257","Kebede, Temesgen","Business Administration","F",1,1,1,1,50,0,-1.7217987179229
+"258","Jackson, Calvin","Computer Science","D",1,1,1,1,60,0,-0.99820735798568
+"259","Whelchel, Noel","Psychology - BS Degree","B",1,1,1,1,80,0,0.448975361888755
+"260","Slaughter, Keenan","Biology","B",1,1,1,1,80,0,0.448975361888755
+"261","Jalloh, Mohamed","Biology","F",1,1,1,1,50,0,-1.7217987179229
+"262","Jalloh, Mohamed","Business Administration","C",1,1,1,1,70,0,-0.274615998048463
+"263","Jalloh, Mohamed","Computer and Information Sys","A",1,1,1,1,90,0,1.17256672182597
+"264","Jackson, Calvin","Mass Media Arts","F",1,1,1,1,50,0,-1.7217987179229
+"265","Lewis, Torina","Computer Science","D",0,1,1,0,60,1,-0.99820735798568
+"266","Slaughter, Keenan","Biology","A",1,1,1,1,90,0,1.17256672182597
+"267","Jalloh, Mohamed","Mass Media Arts","C",1,1,1,1,70,0,-0.274615998048463
+"268","Kebede, Temesgen","Biology","F",1,1,1,1,50,0,-1.7217987179229
+"269","Whelchel, Noel","Biology","B",1,1,1,1,80,0,0.448975361888755
+"270","Harlemon, Maxine","Biology","B",1,1,1,1,80,0,0.448975361888755
+"271","Slaughter, Keenan","Biology","A",1,1,1,1,90,0,1.17256672182597
+"272","Harlemon, Maxine","Biology","D",1,1,1,1,60,0,-0.99820735798568
+"273","Slaughter, Keenan","Business Administration","B",1,1,1,1,80,0,0.448975361888755
+"274","Lewis, Torina","Computer Science","F",0,1,1,0,50,1,-1.7217987179229
+"275","Whelchel, Noel","Biology","A",1,1,1,1,90,0,1.17256672182597
+"276","Harlemon, Maxine","Biology","C",1,1,1,1,70,0,-0.274615998048463
+"277","Slaughter, Keenan","Biology","C",1,1,1,1,70,0,-0.274615998048463
+"278","Whelchel, Noel","Biology","A",1,1,1,1,90,0,1.17256672182597
+"279","Lewis, Torina","Computer Science","B",0,1,1,0,80,1,0.448975361888755
+"280","Slaughter, Keenan","Biology","D",1,1,1,1,60,0,-0.99820735798568
+"281","Djire, Bakary","Business Administration","F",1,1,1,1,50,0,-1.7217987179229
+"282","Parker, Cassandra","Psychology","D",1,1,1,1,60,0,-0.99820735798568
+"283","Djire, Bakary","Chemistry","B",1,1,1,1,80,0,0.448975361888755
+"284","Harlemon, Maxine","Biology","C",1,1,1,1,70,0,-0.274615998048463
+"285","Parker, Cassandra","Computer Science","F",1,1,1,1,50,0,-1.7217987179229
+"286","Djire, Bakary","Biology","C",1,1,1,1,70,0,-0.274615998048463
+"287","Lewis, Torina","Biology","B",1,1,1,1,80,1,0.448975361888755
+"288","Harlemon, Maxine","Biology","A",1,1,1,1,90,0,1.17256672182597
+"289","Harlemon, Maxine","Biology","A",1,1,1,1,90,0,1.17256672182597
+"290","Lewis, Torina","Biology","D",1,1,1,1,60,1,-0.99820735798568
+"291","Lewis, Torina","Biology","D",1,1,1,1,60,1,-0.99820735798568
+"292","Djire, Bakary","Biology","A",1,1,1,1,90,0,1.17256672182597
+"293","Harlemon, Maxine","Biology","B",1,1,1,1,80,0,0.448975361888755
+"294","Harlemon, Maxine","Biology","B",1,1,1,1,80,0,0.448975361888755
+"295","Harlemon, Maxine","Biology","D",1,1,1,1,60,0,-0.99820735798568
+"296","Djire, Bakary","Biology","B",1,1,1,1,80,0,0.448975361888755
+"297","Lewis, Torina","Biology","D",1,1,1,1,60,1,-0.99820735798568
+"298","Lewis, Torina","Biology","A",1,1,1,1,90,1,1.17256672182597
+"299","Lewis, Torina","Biology","B",1,1,1,1,80,1,0.448975361888755
+"300","Harlemon, Maxine","Biology","F",1,1,1,1,50,0,-1.7217987179229
+"301","Parker, Cassandra","Chemistry","D",1,1,1,1,60,0,-0.99820735798568
+"302","Djire, Bakary","Computer and Information Sys","A",1,1,1,1,90,0,1.17256672182597
+"303","Harlemon, Maxine","Chemistry","C",1,1,1,1,70,0,-0.274615998048463
+"304","Harlemon, Maxine","Psychology - BS Degree","B",1,1,1,1,80,0,0.448975361888755
+"305","Parker, Cassandra","Dual Degree-Biology","A",1,1,1,1,90,0,1.17256672182597
+"306","Lewis, Torina","Biology","D",1,1,1,1,60,1,-0.99820735798568
+"307","Parker, Cassandra","Computer Science","F",0,1,1,1,50,0,-1.7217987179229
+"308","Whelchel, Noel","Business Administration","B",0,1,1,1,80,0,0.448975361888755
+"309","Jalloh, Mohamed","Computer Science","F",0,1,1,1,50,0,-1.7217987179229
+"310","Jackson, Calvin","Dual Deg Engineer - Physics","D",0,1,1,1,60,0,-0.99820735798568
+"311","Slaughter, Keenan","Biology","A",0,1,1,1,90,0,1.17256672182597
+"312","Slaughter, Keenan","Computer Science","A",0,1,1,1,90,0,1.17256672182597
+"313","Lewis, Torina","Biology","C",1,1,1,1,70,1,-0.274615998048463
+"314","Slaughter, Keenan","Dual Deg Engineer - Chemistry","A",0,1,1,1,90,0,1.17256672182597
+"315","Jackson, Calvin","Dual Deg Engineer - Physics","F",0,1,1,1,50,0,-1.7217987179229
+"316","Jalloh, Mohamed","Biology","B",0,1,1,1,80,0,0.448975361888755
+"317","Harlemon, Maxine","Business Administration","B",0,1,1,1,80,0,0.448975361888755
+"318","Djire, Bakary","Business Administration","B",0,1,1,1,80,0,0.448975361888755
+"319","Djire, Bakary","Biology","C",0,1,1,1,70,0,-0.274615998048463
+"320","Djire, Bakary","Computer Science","C",0,1,1,1,70,0,-0.274615998048463
+"321","Parker, Cassandra","Business Administration","C",0,1,1,1,70,0,-0.274615998048463
+"322","Parker, Cassandra","Business Administration","D",0,1,1,1,60,0,-0.99820735798568
+"323","Parker, Cassandra","Dual Deg Engineer - Physics","C",0,1,1,1,70,0,-0.274615998048463
+"324","Slaughter, Keenan","Biology","A",1,0,1,1,90,0,1.17256672182597
+"325","Slaughter, Keenan","Social Work","A",1,0,1,1,90,0,1.17256672182597
+"326","Whelchel, Noel","Biology","A",1,0,1,1,90,0,1.17256672182597
+"327","Whelchel, Noel","Biology","B",1,1,1,1,80,0,0.448975361888755
+"328","Harlemon, Maxine","Biology","B",1,1,1,1,80,0,0.448975361888755
+"329","Djire, Bakary","Biology","B",1,1,1,1,80,0,0.448975361888755
+"330","Parker, Cassandra","Biology","B",0,1,1,1,80,0,0.448975361888755
+"331","Parker, Cassandra","Computer Science","C",0,1,1,1,70,0,-0.274615998048463
+"332","Slaughter, Keenan","Computer and Information Sys","A",0,1,1,1,90,0,1.17256672182597
