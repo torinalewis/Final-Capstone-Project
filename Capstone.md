@@ -1,16 +1,18 @@
-\#\#Introduction In fall 2016, Clark Atlanta University (CAU)nevaluated
-student performance in lower-division courses in Academic Year (AY)
-2012/13 to AY 2015/16; this review was then expanded to include AY
-2016/17. There were high failure rates among students in 52.8% of these
-courses, which led to a review of courses in STEM. Foundational STEM
-courses include General Biology I & II, General Chemistry I & II;
-Programing Principles I; Calculus I, II, and III; and General and Modern
-Physics, and Mechanics. From this data, we noticed that approximately
-30% of our STEM majors are earning a C in foundational STEM courses. We
-do not find this result acceptable and hope to provide resources to
-remedy this issue. Since mathematics is foundational for STEM courses,
-we aimed our Course Redesign with Technology (CRT) at improving student
-mastery of concepts in Calculus I.
+\#\#Introduction
+
+In fall 2016, Clark Atlanta University (CAU)nevaluated student
+performance in lower-division courses in Academic Year (AY) 2012/13 to
+AY 2015/16; this review was then expanded to include AY 2016/17. There
+were high failure rates among students in 52.8% of these courses, which
+led to a review of courses in STEM. Foundational STEM courses include
+General Biology I & II, General Chemistry I & II; Programing Principles
+I; Calculus I, II, and III; and General and Modern Physics, and
+Mechanics. From this data, we noticed that approximately 30% of our STEM
+majors are earning a C in foundational STEM courses. We do not find this
+result acceptable and hope to provide resources to remedy this issue.
+Since mathematics is foundational for STEM courses, we aimed our Course
+Redesign with Technology (CRT) at improving student mastery of concepts
+in Calculus I.
 
 A course redesign with the use of adaptive learning courseware began
 spring 2018 in the Department of Mathematical Sciences. The goal of the
@@ -55,25 +57,31 @@ Score - The standardized z-score for numeric grades.
 The necessary libraries needed for the project has been installed and
 are loaded here.
 
-    library(tidyverse) #The swiss knife!
-    #library(haven)
-    #library(sjmisc)
-    #library(plyr)
-    library(MatchIt)
-    #library(ggplot2)
-    #library(caret)
-    #library(RCurl) #To read the csv file from GitHub directly
-    library(rmarkdown)
+``` r
+library(tidyverse) #The swiss knife!
+#library(haven)
+#library(sjmisc)
+#library(plyr)
+library(MatchIt)
+#library(ggplot2)
+#library(caret)
+#library(RCurl) #To read the csv file from GitHub directly
+library(rmarkdown)
+```
 
 All of the packages are loaded. Therefore, we load the data into R and
 call the data frame dta.
 
-    dta <- read.csv("dta.csv")
+``` r
+dta <- read.csv("dta.csv")
+```
 
 An extra variable was included in the data frame after the data was
 read. Thus, the variable was removed.
 
-    #dta<-select(dta, -c(X))
+``` r
+#dta<-select(dta, -c(X))
+```
 
 \#\#Data Wrangligling
 
@@ -117,12 +125,16 @@ positive standard scores, while values below the mean have negative
 standard scores. Adding this column increased the data frame to 10
 variables.
 
-\#\#Exploratory Data Analysis Now that the data have been ingested it is
-time to begin the exploration. The first thing to do is to have a quick
-look at our data. For that, the `str()` function and the more
-human-readable (and intuitive), `glimpse()` function. is used.
+\#\#Exploratory Data Analysis
 
-    glimpse(dta)
+Now that the data have been ingested it is time to begin the
+exploration. The first thing to do is to have a quick look at our data.
+For that, the `str()` function and the more human-readable (and
+intuitive), `glimpse()` function. is used.
+
+``` r
+glimpse(dta)
+```
 
     ## Observations: 332
     ## Variables: 11
@@ -149,7 +161,9 @@ now, we proceed with the intended analysis. Now let’s take a look of the
 structure of the data set to see what additional information is
 available.
 
-    str(dta)
+``` r
+str(dta)
+```
 
     ## 'data.frame':    332 obs. of  11 variables:
     ##  $ X              : int  1 2 3 4 5 6 7 8 9 10 ...
@@ -170,8 +184,10 @@ codes provide almost identical information.
 Since propensity score matching aim is to group the data, the most
 apparent grouping of students., their major.
 
-    library(tidyverse)
-    dta %>% group_by(Major) %>% count() %>% arrange(desc(n))
+``` r
+library(tidyverse)
+dta %>% group_by(Major) %>% count() %>% arrange(desc(n))
+```
 
     ## # A tibble: 20 x 2
     ## # Groups:   Major [20]
@@ -203,8 +219,10 @@ typical as the majority of STEM majors want to become doctors. Now
 consider those majors where the count is greater than five. Call this
 data frame major\_count and print it to the console.
 
-    major_count <- dta %>% group_by(Major) %>% count() %>% filter(n > 5)
-    major_count
+``` r
+major_count <- dta %>% group_by(Major) %>% count() %>% filter(n > 5)
+major_count
+```
 
     ## # A tibble: 10 x 2
     ## # Groups:   Major [10]
@@ -226,15 +244,19 @@ to determine the grade by major. A comparison among majors by grade will
 provide pertinent information. The results will be displayed as a bar
 graph.
 
-    ggplot(dta %>% filter(Major %in% unique(major_count$Major)),
-           aes(x = Grade, fill = Major)) + geom_bar(position = 'dodge')
+``` r
+ggplot(dta %>% filter(Major %in% unique(major_count$Major)),
+       aes(x = Grade, fill = Major)) + geom_bar(position = 'dodge')
+```
 
-![](Capstone_files/figure-markdown_strict/unnamed-chunk-8-1.png)
+![](Capstone_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 Shifting the focus to instructors, the workload of each instructor is
 determined.
 
-    dta %>% group_by(Instructor) %>% count() %>%  arrange(desc(n))
+``` r
+dta %>% group_by(Instructor) %>% count() %>%  arrange(desc(n))
+```
 
     ## # A tibble: 9 x 2
     ## # Groups:   Instructor [9]
@@ -254,8 +276,10 @@ What majors typically enroll in a professors course? Is this by chance
 or design? That is a question for the next project, but it is
 interesting to take a peak at least.
 
-    inst_maj <- dta %>% group_by(Instructor, Major) %>% count() %>% arrange(desc(n))
-    inst_maj
+``` r
+inst_maj <- dta %>% group_by(Instructor, Major) %>% count() %>% arrange(desc(n))
+inst_maj
+```
 
     ## # A tibble: 80 x 3
     ## # Groups:   Instructor, Major [80]
@@ -277,10 +301,12 @@ Since biology has more students enroll in the course than an other
 major, it is not surprising that professors teach a lot of biology
 students.
 
-    ggplot(inst_maj %>% filter(Major %in% unique(major_count$Major)) , aes(x = Instructor, y = n, fill = Major)) + geom_bar(stat = 'identity') +
-      coord_flip()
+``` r
+ggplot(inst_maj %>% filter(Major %in% unique(major_count$Major)) , aes(x = Instructor, y = n, fill = Major)) + geom_bar(stat = 'identity') +
+  coord_flip()
+```
 
-![](Capstone_files/figure-markdown_strict/unnamed-chunk-11-1.png)
+![](Capstone_files/figure-markdown_github/unnamed-chunk-11-1.png)
 
 The graphical view is beautiful. It shows a heat map by instructor and
 the total number of students each professor taught. The lines are filled
@@ -289,17 +315,21 @@ with the number of students in a particular major.
 Shoveling deeper into extracting the truth from the data, consider the
 treatment and control groups number of majors.
 
-    dta %>% filter(Treatment == 1) %>% count(Major) %>% 
-      ggplot(aes(x = reorder(Major, n), y = n, fill = Major)) + geom_bar(stat = 'identity') + coord_flip() +
-      xlab('Major') + theme(legend.position = "none")
+``` r
+dta %>% filter(Treatment == 1) %>% count(Major) %>% 
+  ggplot(aes(x = reorder(Major, n), y = n, fill = Major)) + geom_bar(stat = 'identity') + coord_flip() +
+  xlab('Major') + theme(legend.position = "none")
+```
 
-![](Capstone_files/figure-markdown_strict/unnamed-chunk-12-1.png)
+![](Capstone_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
-    dta %>% filter(Treatment == 0) %>% count(Major) %>% 
-      ggplot(aes(x = reorder(Major, n), y = n, fill = Major)) + geom_bar(stat = 'identity') + coord_flip() +
-      xlab('Major') + theme(legend.position = "none")
+``` r
+dta %>% filter(Treatment == 0) %>% count(Major) %>% 
+  ggplot(aes(x = reorder(Major, n), y = n, fill = Major)) + geom_bar(stat = 'identity') + coord_flip() +
+  xlab('Major') + theme(legend.position = "none")
+```
 
-![](Capstone_files/figure-markdown_strict/unnamed-chunk-12-2.png)
+![](Capstone_files/figure-markdown_github/unnamed-chunk-12-2.png)
 
 Wow, the treatment group only includes five majors, and the control
 group contains every major in the data set. From this information, we
@@ -307,13 +337,17 @@ filter only biology, computer science, computer information system,
 psychology, and dual deg engineering (chemistry) for additional
 analysis.
 
-    dta_new <- filter(dta, Major == "Biology" | Major == "Psychology" | Major == "Computer and Information Sys" | Major == "Computer Science" | Major == "Dual Deg Engineer - Chemistry")
+``` r
+dta_new <- filter(dta, Major == "Biology" | Major == "Psychology" | Major == "Computer and Information Sys" | Major == "Computer Science" | Major == "Dual Deg Engineer - Chemistry")
+```
 
 To ensure that the code above properly filtered the data, a simple table
 is coded to count the number of students in each major.
 
-    major_count1 <- dta_new %>% group_by(Major) %>% count()
-    major_count1
+``` r
+major_count1 <- dta_new %>% group_by(Major) %>% count()
+major_count1
+```
 
     ## # A tibble: 5 x 2
     ## # Groups:   Major [5]
@@ -330,21 +364,26 @@ are completed. That is, a the grades that the students earned in the
 treatment and the control groups. This information may spark more
 questions.
 
-    dta_new$Intervention <- ifelse(dta_new$Treatment == 1, 'Yes', 'No')
-    ggplot(dta_new, aes(x = Grade, fill = Intervention)) + geom_bar()
+``` r
+dta_new$Intervention <- ifelse(dta_new$Treatment == 1, 'Yes', 'No')
+ggplot(dta_new, aes(x = Grade, fill = Intervention)) + geom_bar()
+```
 
-![](Capstone_files/figure-markdown_strict/unnamed-chunk-15-1.png)
+![](Capstone_files/figure-markdown_github/unnamed-chunk-15-1.png)
 
-\#\#Statistical Analysis Determine if there is a difference in means
-between the treatment and the control groups for the variables “Score
-and Std\_Score.” These two values are equivalent, but there may be value
-in examining both.
+\#\#Statistical Analysis
 
-    dta_new %>%
-      dplyr::group_by(Treatment) %>%
-      dplyr::summarise(n_students = n(),
-                AvgScore = mean(Score),
-                std_error = sd(Score) / sqrt(n_students))
+Determine if there is a difference in means between the treatment and
+the control groups for the variables “Score and Std\_Score.” These two
+values are equivalent, but there may be value in examining both.
+
+``` r
+dta_new %>%
+  dplyr::group_by(Treatment) %>%
+  dplyr::summarise(n_students = n(),
+            AvgScore = mean(Score),
+            std_error = sd(Score) / sqrt(n_students))
+```
 
     ## # A tibble: 2 x 4
     ##   Treatment n_students AvgScore std_error
@@ -352,12 +391,14 @@ in examining both.
     ## 1         0        215     75.2     0.939
     ## 2         1         27     68.9     2.29
 
-    #Calculate the differences in means for the standardized score "Std_Score" grouping by treatment (1) and control (0) groups for the outcome variable.
-    dta_new %>%
-      dplyr:: group_by(Treatment) %>%
-      dplyr:: summarise(n_students = n(),
-                AvgStdScore = mean(Std_Score),
-                std_error = sd(Std_Score) / sqrt(n_students))
+``` r
+#Calculate the differences in means for the standardized score "Std_Score" grouping by treatment (1) and control (0) groups for the outcome variable.
+dta_new %>%
+  dplyr:: group_by(Treatment) %>%
+  dplyr:: summarise(n_students = n(),
+            AvgStdScore = mean(Std_Score),
+            std_error = sd(Std_Score) / sqrt(n_students))
+```
 
     ## # A tibble: 2 x 4
     ##   Treatment n_students AvgStdScore std_error
@@ -375,7 +416,9 @@ twice, once for “Score” and another time for the “Std\_Score” variable.
 
 Recall: Null hypotheses - the mean of the two samples are equal.
 
-    with(dta_new, t.test(Std_Score ~ Treatment))
+``` r
+with(dta_new, t.test(Std_Score ~ Treatment))
+```
 
     ## 
     ##  Welch Two Sample t-test
@@ -389,7 +432,9 @@ Recall: Null hypotheses - the mean of the two samples are equal.
     ## mean in group 0 mean in group 1 
     ##      0.09895908     -0.35501504
 
-    with(dta_new, t.test(Score ~ Treatment))
+``` r
+with(dta_new, t.test(Score ~ Treatment))
+```
 
     ## 
     ##  Welch Two Sample t-test
@@ -410,7 +455,9 @@ view the user guide to help determine the best fit for the code.
 
 u
 
-    ?matchit
+``` r
+?matchit
+```
 
     ## starting httpd help server ... done
 
@@ -424,10 +471,12 @@ additional methods available with explanitations in the user guide. A
 summary of the matching model is printed, and a graphical depiction of
 the matched data is provided.
 
-    library(MatchIt)
-    mod_match <- matchit(Treatment ~  Gender + Race + Pell + X1st.Generation,
-                         method = 'nearest', data = dta_new)
-    summary(mod_match)
+``` r
+library(MatchIt)
+mod_match <- matchit(Treatment ~  Gender + Race + Pell + X1st.Generation,
+                     method = 'nearest', data = dta_new)
+summary(mod_match)
+```
 
     ## 
     ## Call:
@@ -478,38 +527,46 @@ the matched data is provided.
     ## Unmatched     188       0
     ## Discarded       0       0
 
-    plot(mod_match)
+``` r
+plot(mod_match)
+```
 
-![](Capstone_files/figure-markdown_strict/unnamed-chunk-19-1.png)![](Capstone_files/figure-markdown_strict/unnamed-chunk-19-2.png)
+![](Capstone_files/figure-markdown_github/unnamed-chunk-19-1.png)![](Capstone_files/figure-markdown_github/unnamed-chunk-19-2.png)
 
 The first line of code creates an R data set that only contains the
 matched cases. The second line of data converts and saves the matched
 data set as a .csv file. It is just like saving a word document. Now the
 document can be opened on any device that read .csv files.
 
-    mod_data <- match.data(mod_match)
-    write.csv(mod_data, file = "mod_data.csv")
+``` r
+mod_data <- match.data(mod_match)
+write.csv(mod_data, file = "mod_data.csv")
+```
 
-\#\#The Results The results show that the matching worked well with the
-data set as all of the students in the treatment group were matched to a
-student in the control group. In the summary of balance for all data
-section of the table, before matching, there were slight differences in
-treated and control means. After matching, there was no difference in
-the means. The quartile (QQ) columns in these summary data show the
-median, mean, and maximum quartile between the treated and control data;
-smaller QQ values indicates better matching. Note that the QQ values
-were 0 after matching.
+\#\#The Results
+
+The results show that the matching worked well with the data set as all
+of the students in the treatment group were matched to a student in the
+control group. In the summary of balance for all data section of the
+table, before matching, there were slight differences in treated and
+control means. After matching, there was no difference in the means. The
+quartile (QQ) columns in these summary data show the median, mean, and
+maximum quartile between the treated and control data; smaller QQ values
+indicates better matching. Note that the QQ values were 0 after
+matching.
 
 \#\#Examining Covariate Balance in the Matched Sample
 
 \#COVARIATES \#Calculate the differences in means for the covariates.
 dta\_cov &lt;- c( “Race”, “Pell”, “X1st.Generation”, “Gender”)
 
-    dta_cov <- c( "Race", "Pell", "X1st.Generation", "Gender")
-    mod_data %>%
-      group_by(Treatment) %>%
-      select(one_of(dta_cov)) %>%
-      summarise_all(funs(mean))
+``` r
+dta_cov <- c( "Race", "Pell", "X1st.Generation", "Gender")
+mod_data %>%
+  group_by(Treatment) %>%
+  select(one_of(dta_cov)) %>%
+  summarise_all(funs(mean))
+```
 
     ## Adding missing grouping variables: `Treatment`
 
@@ -536,8 +593,10 @@ The means below indicate that we have attained a high degree of balance
 on the four covariates includede in the model. A t-test is a more formal
 way of testing if the means differ,
 
-    lapply(dta_cov, function(v) {
-        t.test(mod_data[, v] ~ mod_data$Treatment)})
+``` r
+lapply(dta_cov, function(v) {
+    t.test(mod_data[, v] ~ mod_data$Treatment)})
+```
 
     ## [[1]]
     ## 
@@ -599,27 +658,31 @@ difference in means between the covariates. An estimate of the effects
 of the resentment on each of the groups is easy once the data is
 matched.
 
-    with(mod_data, t.test(Score ~ Treatment))
+``` r
+with(mod_data, t.test(Score ~ Treatment))
+```
 
     ## 
     ##  Welch Two Sample t-test
     ## 
     ## data:  Score by Treatment
-    ## t = 1.0373, df = 47.092, p-value = 0.3049
+    ## t = 0.39726, df = 48.967, p-value = 0.6929
     ## alternative hypothesis: true difference in means is not equal to 0
     ## 95 percent confidence interval:
-    ##  -3.827032 11.975180
+    ##  -6.012867  8.975830
     ## sample estimates:
     ## mean in group 0 mean in group 1 
-    ##        72.96296        68.88889
+    ##        70.37037        68.88889
 
 The t-test reveals that there is a difference between the means. It
 appears that the control group outperformed the treatment group.
 
 \#\#Machine Learning - Linear Regression
 
-    lm_treat1 <- lm(Score ~ Race + Pell + X1st.Generation + Gender, data = mod_data)
-    summary(lm_treat1)
+``` r
+lm_treat1 <- lm(Score ~ Race + Pell + X1st.Generation + Gender, data = mod_data)
+summary(lm_treat1)
+```
 
     ## 
     ## Call:
@@ -627,22 +690,22 @@ appears that the control group outperformed the treatment group.
     ##     data = mod_data)
     ## 
     ## Residuals:
-    ##    Min     1Q Median     3Q    Max 
-    ## -24.52 -10.00   1.19  10.00  24.29 
+    ##     Min      1Q  Median      3Q     Max 
+    ## -22.500 -12.292  -1.250   8.646  26.667 
     ## 
     ## Coefficients:
     ##                 Estimate Std. Error t value Pr(>|t|)    
-    ## (Intercept)       57.500      6.736   8.536 2.93e-11 ***
-    ## Race               3.929      8.444   0.465   0.6438    
-    ## Pell               4.286      4.648   0.922   0.3611    
-    ## X1st.Generation   -8.810      4.930  -1.787   0.0802 .  
-    ## Gender            13.095      5.092   2.572   0.0132 *  
+    ## (Intercept)      65.0000     6.8045   9.553    9e-13 ***
+    ## Race             -2.5000     8.5299  -0.293   0.7707    
+    ## Pell              0.8333     4.6955   0.177   0.8599    
+    ## X1st.Generation  -1.2500     4.9804  -0.251   0.8029    
+    ## Gender            9.1667     5.1437   1.782   0.0809 .  
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## 
-    ## Residual standard error: 13.47 on 49 degrees of freedom
-    ## Multiple R-squared:  0.1954, Adjusted R-squared:  0.1297 
-    ## F-statistic: 2.975 on 4 and 49 DF,  p-value: 0.02815
+    ## Residual standard error: 13.61 on 49 degrees of freedom
+    ## Multiple R-squared:  0.07328,    Adjusted R-squared:  -0.002372 
+    ## F-statistic: 0.9687 on 4 and 49 DF,  p-value: 0.4332
 
 We are interested in whether the treatment or control performed better
 in Calculus I in terms of achievement. To include machine learning
@@ -656,15 +719,20 @@ not.
 Machine Learning Model
 *y* = 67.5 + 1*o**x*<sub>1</sub> − 5.833*x*<sub>2</sub> − 0.00000000000003815*x*<sub>3</sub> + 0.8333*x*<sub>4</sub>
 
-\#\#Recommendations 1. Try to use another intervention 2. Collect
-additional data on the students that can be used as possible variables
-that influence grades 3. Higher me fulltime
+\#\#Recommendations
 
-\#\#Future Work What will happen if the model is built for categorical
-values? Will the data stil be a perfect match? These are all questions
-availabe for fututre analysis. Building more efficient models and
-developing sound reasoning for selecting covariates for the models is an
-aspect that can enhance this project. Also conducting a follow-up
-analysis on the matched grouped to determine if the treatment had an
-impact on student achievement in Calculus I. Lastly, it is my goal to
-build a model that predicts final grades or final exam scores.
+1.  Try to use another intervention
+2.  Collect additional data on the students that can be used as possible
+    variables that influence grades
+3.  Higher me fulltime
+
+\#\#Future Work
+
+What will happen if the model is built for categorical values? Will the
+data stil be a perfect match? These are all questions availabe for
+fututre analysis. Building more efficient models and developing sound
+reasoning for selecting covariates for the models is an aspect that can
+enhance this project. Also conducting a follow-up analysis on the
+matched grouped to determine if the treatment had an impact on student
+achievement in Calculus I. Lastly, it is my goal to build a model that
+predicts final grades or final exam scores.

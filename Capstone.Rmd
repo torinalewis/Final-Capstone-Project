@@ -3,11 +3,12 @@ title: "Capstone"
 author: "Torina Lewis"
 date: "7/21/2019"
 output:
-  md_document: default
-  pdf_document: default
+  md_document:
+    variant: markdown_github
 ---
 
 ##Introduction
+
 In fall 2016, Clark Atlanta University (CAU)nevaluated student performance in lower-division courses in  Academic Year (AY) 2012/13 to AY 2015/16; this review was then expanded to include AY 2016/17.  There were high failure rates among students in 52.8% of these courses, which led to a review of courses in STEM.  Foundational STEM courses include General Biology I & II, General Chemistry I & II; Programing Principles I; Calculus I, II, and III; and General and Modern Physics, and Mechanics.  From this data, we noticed that approximately 30% of our STEM majors are earning a C in foundational STEM courses.  We do not find this result acceptable and hope to provide resources to remedy this issue.  Since mathematics is foundational for STEM courses, we aimed our Course Redesign with Technology (CRT) at improving student mastery of concepts in Calculus I.  
 
 A course redesign with the use of adaptive learning courseware began spring 2018 in the Department of Mathematical Sciences.  The goal of the effort was to improve students’ mastery and the use of mathematical concepts through course redesign, assessment, and implementation using adaptive learning courseware which will enhance student mastery of learning outcomes, retention, and persistence rates in the undergraduate STEM degree programs at CAU.  Calculus I was the selected course involved in the redesign and students occupied four sections of this course.  Students in the course were divided into two groups.  One section of the course was exposed (treatment group) to the intervention, the use of adaptive learning courseware, while the other students learned Calculus with previous teaching methods (control group).  The courseware piloted in this course is Assessment and LEarning in Knowledge Spaces (ALEKS).  The course product used was “Prep for Calculus,” a course that is designed to help students to develop the prerequisite foundation needed to learn Calculus I.   We employ this product as a corequisite to support the Calculus I course.  
@@ -68,6 +69,7 @@ Standardized z-score:  In the standardized z-score column, a function was writte
 
 
 ##Exploratory Data Analysis
+
 Now that the data have been ingested it is time to begin the exploration.  The first thing to do is to have a quick look at our data.  For that, the `str()` function and the more human-readable (and intuitive), `glimpse()` function. is used.
 
 ```{r}
@@ -176,6 +178,7 @@ ggplot(dta_new, aes(x = Grade, fill = Intervention)) + geom_bar()
 
 
 ##Statistical Analysis
+
 Determine if there is a difference in means between the treatment and the control groups for the variables "Score and Std_Score."  These two values are equivalent, but there may be value in examining both.
 
 
@@ -249,6 +252,7 @@ write.csv(mod_data, file = "mod_data.csv")
 
 
 ##The Results
+
 The results show that the matching worked well with the data set as all of the students in the treatment group were matched to a student in the control group.  In the summary of balance for all data section of the table, before matching, there were slight differences in treated and control means.  After matching, there was no difference in the means.  The quartile (QQ) columns in these summary data show the median, mean, and maximum quartile between the treated and control data; smaller QQ values indicates better matching. Note that the QQ values were 0 after matching.
 
 
@@ -291,6 +295,7 @@ The t-test reveals that there is a difference between the means.  It appears tha
 
 ##Machine Learning - Linear Regression
 
+
 ```{r}
 lm_treat1 <- lm(Score ~ Race + Pell + X1st.Generation + Gender, data = mod_data)
 summary(lm_treat1)
@@ -304,12 +309,14 @@ $$y=67.5+1ox_1-5.833x_2-0.00000000000003815x_3+0.8333x_4$$
 
 
 ##Recommendations
+
 1. Try to use another intervention
 2. Collect additional data on the students that can be used as possible variables that influence grades
 3. Higher me fulltime
 
 
 ##Future Work
+
 What will happen if the model is built for categorical values?  Will the data stil be a perfect match? These are all questions availabe for fututre analysis. Building more efficient models and developing sound reasoning for selecting covariates for the models is an aspect that can enhance this project. Also conducting a follow-up analysis on the matched grouped to determine if the treatment had an impact on student achievement in Calculus I.  Lastly, it is my goal to build a model that predicts final grades or final exam scores.
 
 
