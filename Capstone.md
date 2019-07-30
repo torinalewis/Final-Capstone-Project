@@ -1,4 +1,5 @@
-\#\#Introduction
+Introduction
+------------
 
 In fall 2016, Clark Atlanta University (CAU)nevaluated student
 performance in lower-division courses in Academic Year (AY) 2012/13 to
@@ -83,7 +84,8 @@ read. Thus, the variable was removed.
 #dta<-select(dta, -c(X))
 ```
 
-\#\#Data Wrangligling
+Data Wrangligling
+-----------------
 
 The data set was provided in a nearly cleaned manner. However, multiple
 data wrangling techniques were performed on the data frame to transom it
@@ -125,7 +127,8 @@ positive standard scores, while values below the mean have negative
 standard scores. Adding this column increased the data frame to 10
 variables.
 
-\#\#Exploratory Data Analysis
+Exploratory Data Analysis
+-------------------------
 
 Now that the data have been ingested it is time to begin the
 exploration. The first thing to do is to have a quick look at our data.
@@ -371,7 +374,8 @@ ggplot(dta_new, aes(x = Grade, fill = Intervention)) + geom_bar()
 
 ![](Capstone_files/figure-markdown_github/unnamed-chunk-15-1.png)
 
-\#\#Statistical Analysis
+Statistical Analysis
+--------------------
 
 Determine if there is a difference in means between the treatment and
 the control groups for the variables “Score and Std\_Score.” These two
@@ -543,7 +547,8 @@ mod_data <- match.data(mod_match)
 write.csv(mod_data, file = "mod_data.csv")
 ```
 
-\#\#The Results
+The Results
+-----------
 
 The results show that the matching worked well with the data set as all
 of the students in the treatment group were matched to a student in the
@@ -555,7 +560,8 @@ maximum quartile between the treated and control data; smaller QQ values
 indicates better matching. Note that the QQ values were 0 after
 matching.
 
-\#\#Examining Covariate Balance in the Matched Sample
+Examining Covariate Balance in the Matched Sample
+-------------------------------------------------
 
 \#COVARIATES \#Calculate the differences in means for the covariates.
 dta\_cov &lt;- c( “Race”, “Pell”, “X1st.Generation”, “Gender”)
@@ -666,18 +672,19 @@ with(mod_data, t.test(Score ~ Treatment))
     ##  Welch Two Sample t-test
     ## 
     ## data:  Score by Treatment
-    ## t = 0.39726, df = 48.967, p-value = 0.6929
+    ## t = 1.1236, df = 49.894, p-value = 0.2666
     ## alternative hypothesis: true difference in means is not equal to 0
     ## 95 percent confidence interval:
-    ##  -6.012867  8.975830
+    ##  -3.209274 11.357423
     ## sample estimates:
     ## mean in group 0 mean in group 1 
-    ##        70.37037        68.88889
+    ##        72.96296        68.88889
 
 The t-test reveals that there is a difference between the means. It
 appears that the control group outperformed the treatment group.
 
-\#\#Machine Learning - Linear Regression
+Machine Learning - Linear Regression
+------------------------------------
 
 ``` r
 lm_treat1 <- lm(Score ~ Race + Pell + X1st.Generation + Gender, data = mod_data)
@@ -690,22 +697,22 @@ summary(lm_treat1)
     ##     data = mod_data)
     ## 
     ## Residuals:
-    ##     Min      1Q  Median      3Q     Max 
-    ## -22.500 -12.292  -1.250   8.646  26.667 
+    ##      Min       1Q   Median       3Q      Max 
+    ## -22.9762  -9.3750  -0.9375   9.8438  21.4286 
     ## 
     ## Coefficients:
     ##                 Estimate Std. Error t value Pr(>|t|)    
-    ## (Intercept)      65.0000     6.8045   9.553    9e-13 ***
-    ## Race             -2.5000     8.5299  -0.293   0.7707    
-    ## Pell              0.8333     4.6955   0.177   0.8599    
-    ## X1st.Generation  -1.2500     4.9804  -0.251   0.8029    
-    ## Gender            9.1667     5.1437   1.782   0.0809 .  
+    ## (Intercept)       52.500      6.195   8.475 3.62e-11 ***
+    ## Race              16.071      7.765   2.070   0.0438 *  
+    ## Pell               4.048      4.275   0.947   0.3483    
+    ## X1st.Generation   -7.649      4.534  -1.687   0.0980 .  
+    ## Gender             4.405      4.683   0.941   0.3515    
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## 
-    ## Residual standard error: 13.61 on 49 degrees of freedom
-    ## Multiple R-squared:  0.07328,    Adjusted R-squared:  -0.002372 
-    ## F-statistic: 0.9687 on 4 and 49 DF,  p-value: 0.4332
+    ## Residual standard error: 12.39 on 49 degrees of freedom
+    ## Multiple R-squared:  0.2044, Adjusted R-squared:  0.1395 
+    ## F-statistic: 3.148 on 4 and 49 DF,  p-value: 0.02215
 
 We are interested in whether the treatment or control performed better
 in Calculus I in terms of achievement. To include machine learning
@@ -719,14 +726,16 @@ not.
 Machine Learning Model
 *y* = 67.5 + 1*o**x*<sub>1</sub> − 5.833*x*<sub>2</sub> − 0.00000000000003815*x*<sub>3</sub> + 0.8333*x*<sub>4</sub>
 
-\#\#Recommendations
+Recommendations
+---------------
 
 1.  Try to use another intervention
 2.  Collect additional data on the students that can be used as possible
     variables that influence grades
 3.  Higher me fulltime
 
-\#\#Future Work
+Future Work
+-----------
 
 What will happen if the model is built for categorical values? Will the
 data stil be a perfect match? These are all questions availabe for
