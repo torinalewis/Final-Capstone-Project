@@ -5,7 +5,6 @@ date: "7/21/2019"
 output: 
   md_document:
     variant: markdown_github
-
 #output: html_document
 ---
 
@@ -56,7 +55,7 @@ An extra variable was included in the data frame after the data was read.  Thus,
 #dta<-select(dta, -c(X))
 ```
 
-## Data Wrangligling
+## Data Wrangling
 
 The data set was provided in a nearly cleaned manner.  However, multiple data wrangling techniques were performed on the data frame to transom it into a document that can be analyzed.  These techniques include removing unnecessary variables, changing the names of some columns, adding variables, and including functions for calculation. 
 
