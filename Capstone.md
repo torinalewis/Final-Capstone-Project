@@ -1,7 +1,7 @@
 Introduction
 ------------
 
-In fall 2016, Clark Atlanta University (CAU)nevaluated student
+In fall 2016, Clark Atlanta University (CAU) evaluated student
 performance in lower-division courses in Academic Year (AY) 2012/13 to
 AY 2015/16; this review was then expanded to include AY 2016/17. There
 were high failure rates among students in 52.8% of these courses, which
@@ -9,11 +9,11 @@ led to a review of courses in STEM. Foundational STEM courses include
 General Biology I & II, General Chemistry I & II; Programing Principles
 I; Calculus I, II, and III; and General and Modern Physics, and
 Mechanics. From this data, we noticed that approximately 30% of our STEM
-majors are earning a C in foundational STEM courses. We do not find this
-result acceptable and hope to provide resources to remedy this issue.
-Since mathematics is foundational for STEM courses, we aimed our Course
-Redesign with Technology (CRT) at improving student mastery of concepts
-in Calculus I.
+majors are earning a C in foundational STEM courses. We did not find
+this result acceptable and hope to provide resources to remedy this
+issue. Since mathematics is foundational for STEM courses, we aimed our
+Course Redesign with Technology (CRT) effort at improving student
+mastery of concepts in Calculus I.
 
 A course redesign with the use of adaptive learning courseware began
 spring 2018 in the Department of Mathematical Sciences. The goal of the
@@ -672,13 +672,13 @@ with(mod_data, t.test(Score ~ Treatment))
     ##  Welch Two Sample t-test
     ## 
     ## data:  Score by Treatment
-    ## t = 1.5236, df = 49.717, p-value = 0.1339
+    ## t = 2.0338, df = 48.075, p-value = 0.04751
     ## alternative hypothesis: true difference in means is not equal to 0
     ## 95 percent confidence interval:
-    ##  -1.769243 12.880354
+    ##   0.08892141 15.46663414
     ## sample estimates:
     ## mean in group 0 mean in group 1 
-    ##        74.44444        68.88889
+    ##        76.66667        68.88889
 
 The t-test reveals that there is a difference between the means. It
 appears that the control group outperformed the treatment group.
@@ -698,21 +698,21 @@ summary(lm_treat1)
     ## 
     ## Residuals:
     ##     Min      1Q  Median      3Q     Max 
-    ## -27.738 -12.143   2.262   7.500  23.214 
+    ## -25.476 -13.542   2.976  12.976  20.000 
     ## 
     ## Coefficients:
     ##                 Estimate Std. Error t value Pr(>|t|)    
-    ## (Intercept)      65.0000     6.5678   9.897 2.84e-13 ***
-    ## Race              1.7857     8.2332   0.217   0.8292    
-    ## Pell             -4.6429     4.5322  -1.024   0.3107    
-    ## X1st.Generation  -0.5952     4.8072  -0.124   0.9020    
-    ## Gender           10.9524     4.9648   2.206   0.0321 *  
+    ## (Intercept)       70.000      7.052   9.927 2.57e-13 ***
+    ## Race              -6.071      8.840  -0.687   0.4954    
+    ## Pell              -1.548      4.866  -0.318   0.7518    
+    ## X1st.Generation   -1.101      5.161  -0.213   0.8319    
+    ## Gender            13.095      5.331   2.457   0.0176 *  
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## 
-    ## Residual standard error: 13.14 on 49 degrees of freedom
-    ## Multiple R-squared:  0.1328, Adjusted R-squared:  0.06206 
-    ## F-statistic: 1.877 on 4 and 49 DF,  p-value: 0.1295
+    ## Residual standard error: 14.1 on 49 degrees of freedom
+    ## Multiple R-squared:  0.1206, Adjusted R-squared:  0.04887 
+    ## F-statistic: 1.681 on 4 and 49 DF,  p-value: 0.1695
 
 Machine Learning Results
 ------------------------
@@ -728,14 +728,14 @@ mathematics scores were predicted from the following variables: “Race”,
 was found that there is no statistically significant difference between
 grades of the student that receive adaptive learning or student that did
 not. We now address the quality of the linear regression fit using
-*R*<sub>2</sub> and the residual standard error (RSE),
-“*σ*<sup>2</sup>.” The RSE is an estimate of standard error deviation.
-That is, it is the average deviation from the true regression line. In
-the resulting output, the RSE is 12.39. This value reflects the actual
-scores that the students earn deviation from the true regression line an
-average of approximately 12 points. The RSE indicates that the model has
-variability in fitting the data as 12 points can possibly change a
-student letter grade. The *R*<sup>2</sup> statistic provides an
+*R*<sup>2</sup> and the residual standard error (RSE). The symbol from
+RSE is “*σ*<sup>2</sup>.” The RSE is an estimate of standard error
+deviation. That is, it is the average deviation from the true regression
+line. In the resulting output, the RSE is 12.39. This value reflects the
+actual scores that the students earn deviation from the true regression
+line an average of approximately 12 points. The RSE indicates that the
+model has variability in fitting the data as 12 points can possibly
+change a student letter grade. The *R*<sup>2</sup> statistic provides an
 alternative measure of fit. It measures the proportion of the
 variability in *Y* that can be explained using *X*. The *R*<sup>2</sup>
 statistic takes on a value, 0 ≤ *R*<sup>2</sup> ≤ 1. An *R*<sup>2</sup>
@@ -744,7 +744,7 @@ proportion of the variability in the response. In the outcome summary
 for the model, *R*<sup>2</sup> = 0.07. Since this value is close to 0,
 we can conclude that the regression did not explain much of the
 variability in a student’s score. One of three scenarios can give rise
-to the low *R*<sub>2</sub> value: (1) the linear model should be
+to the low *R*<sup>2</sup> value: (1) the linear model should be
 modified, (2) the inherent error *σ*<sup>2</sup> is high, or (3) both.
 
 Information from the *R*<sup>2</sup> and *σ*<sup>2</sup> statistics
