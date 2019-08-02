@@ -302,18 +302,23 @@ lm_treat1 <- lm(Score ~ Race + Pell + X1st.Generation + Gender, data = mod_data)
 summary(lm_treat1)
 ```
 
+
+## Machine Learning Results
+
+This is the machine learning model.
+$$y=67.5+10x_1-5.833x_2-0.00000000000003815x_3+0.8333x_4$$
+
+
 We are interested in whether the treatment or control performed better in Calculus I in terms of achievement.  To include machine learning tools, the variable "Score" was added to the matched data set and mathematics scores were predicted from the following variables: "Race", "Pell", "X1st.Generation", and "Gender".  With and without matching, it was found that there is no statistically significant difference between grades of the student that receive adaptive learning or student that did not.
+We now address the quality of the linear regression fit using $R_2$ and the residual standard error (RSE), "$\sigma^2$."  The RSE is an estimate of standard error deviation.  That is, it is the average deviation from the true regression line.  In the resulting output, the RSE is 12.39.  This value reflects the actual scores that the students earn deviation from the true regression line an average of approximately 12 points. The RSE indicates that the model has variability in fitting the data as 12 points can possibly change a student letter grade.  The $R^2$ statistic provides an alternative measure of fit.  It measures the proportion of the variability in $Y$ that can be explained using $X$.  The $R^2$ statistic takes on a value, $0\leq R^2\leq 1$.  An $R^2$ value near one indicates that the regression has explained a large proportion of the variability in the response.  In the outcome summary for the model, $R^2=0.07$.  Since this value is close to $0$, we can conclude that the regression did not explain much of the variability in a student's score.  One of three scenarios can give rise to the low $R_2$ value: (1) the linear model should be modified, (2) the inherent error $\sigma^2$ is high, or (3) both. 
 
-
-Machine Learning Model
-$$y=67.5+1ox_1-5.833x_2-0.00000000000003815x_3+0.8333x_4$$
-
+Information from the $R^2$ and $\sigma^2$ statistics determine that the model can use some work.  To improve this model we consider a more technical method tt select independent variables.  Selecting additional independent variables and/or removing independent variables may have a significant impact on the model.
 
 ## Recommendations
 
-1. Try to use another intervention
-2. Collect additional data on the students that can be used as possible variables that influence grades
-3. Higher me fulltime
+1. Use another intervention
+2. Collect additional data on the students that can be used as possible independent variables that influence grades
+3. Perform the same analysis to determine if the intervention has better results in the fall semesters
 
 
 ## Future Work

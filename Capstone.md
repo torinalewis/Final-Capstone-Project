@@ -672,13 +672,13 @@ with(mod_data, t.test(Score ~ Treatment))
     ##  Welch Two Sample t-test
     ## 
     ## data:  Score by Treatment
-    ## t = 0.8847, df = 51.756, p-value = 0.3804
+    ## t = 1.5236, df = 49.717, p-value = 0.1339
     ## alternative hypothesis: true difference in means is not equal to 0
     ## 95 percent confidence interval:
-    ##  -3.758300  9.684226
+    ##  -1.769243 12.880354
     ## sample estimates:
     ## mean in group 0 mean in group 1 
-    ##        71.85185        68.88889
+    ##        74.44444        68.88889
 
 The t-test reveals that there is a difference between the means. It
 appears that the control group outperformed the treatment group.
@@ -697,22 +697,28 @@ summary(lm_treat1)
     ##     data = mod_data)
     ## 
     ## Residuals:
-    ##    Min     1Q Median     3Q    Max 
-    ## -22.74  -7.50  -2.50   7.50  22.50 
+    ##     Min      1Q  Median      3Q     Max 
+    ## -27.738 -12.143   2.262   7.500  23.214 
     ## 
     ## Coefficients:
     ##                 Estimate Std. Error t value Pr(>|t|)    
-    ## (Intercept)       57.500      5.867   9.801 3.91e-13 ***
-    ## Race               6.786      7.355   0.923   0.3607    
-    ## Pell               1.190      4.049   0.294   0.7700    
-    ## X1st.Generation   -1.429      4.294  -0.333   0.7408    
-    ## Gender             8.452      4.435   1.906   0.0625 .  
+    ## (Intercept)      65.0000     6.5678   9.897 2.84e-13 ***
+    ## Race              1.7857     8.2332   0.217   0.8292    
+    ## Pell             -4.6429     4.5322  -1.024   0.3107    
+    ## X1st.Generation  -0.5952     4.8072  -0.124   0.9020    
+    ## Gender           10.9524     4.9648   2.206   0.0321 *  
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## 
-    ## Residual standard error: 11.73 on 49 degrees of freedom
-    ## Multiple R-squared:  0.1559, Adjusted R-squared:  0.08701 
-    ## F-statistic: 2.263 on 4 and 49 DF,  p-value: 0.07577
+    ## Residual standard error: 13.14 on 49 degrees of freedom
+    ## Multiple R-squared:  0.1328, Adjusted R-squared:  0.06206 
+    ## F-statistic: 1.877 on 4 and 49 DF,  p-value: 0.1295
+
+Machine Learning Results
+------------------------
+
+This is the machine learning model.
+*y* = 67.5 + 10*x*<sub>1</sub> − 5.833*x*<sub>2</sub> − 0.00000000000003815*x*<sub>3</sub> + 0.8333*x*<sub>4</sub>
 
 We are interested in whether the treatment or control performed better
 in Calculus I in terms of achievement. To include machine learning
@@ -721,18 +727,40 @@ mathematics scores were predicted from the following variables: “Race”,
 “Pell”, “X1st.Generation”, and “Gender”. With and without matching, it
 was found that there is no statistically significant difference between
 grades of the student that receive adaptive learning or student that did
-not.
+not. We now address the quality of the linear regression fit using
+*R*<sub>2</sub> and the residual standard error (RSE),
+“*σ*<sup>2</sup>.” The RSE is an estimate of standard error deviation.
+That is, it is the average deviation from the true regression line. In
+the resulting output, the RSE is 12.39. This value reflects the actual
+scores that the students earn deviation from the true regression line an
+average of approximately 12 points. The RSE indicates that the model has
+variability in fitting the data as 12 points can possibly change a
+student letter grade. The *R*<sup>2</sup> statistic provides an
+alternative measure of fit. It measures the proportion of the
+variability in *Y* that can be explained using *X*. The *R*<sup>2</sup>
+statistic takes on a value, 0 ≤ *R*<sup>2</sup> ≤ 1. An *R*<sup>2</sup>
+value near one indicates that the regression has explained a large
+proportion of the variability in the response. In the outcome summary
+for the model, *R*<sup>2</sup> = 0.07. Since this value is close to 0,
+we can conclude that the regression did not explain much of the
+variability in a student’s score. One of three scenarios can give rise
+to the low *R*<sub>2</sub> value: (1) the linear model should be
+modified, (2) the inherent error *σ*<sup>2</sup> is high, or (3) both.
 
-Machine Learning Model
-*y* = 67.5 + 1*o**x*<sub>1</sub> − 5.833*x*<sub>2</sub> − 0.00000000000003815*x*<sub>3</sub> + 0.8333*x*<sub>4</sub>
+Information from the *R*<sup>2</sup> and *σ*<sup>2</sup> statistics
+determine that the model can use some work. To improve this model we
+consider a more technical method tt select independent variables.
+Selecting additional independent variables and/or removing independent
+variables may have a significant impact on the model.
 
 Recommendations
 ---------------
 
-1.  Try to use another intervention
+1.  Use another intervention
 2.  Collect additional data on the students that can be used as possible
-    variables that influence grades
-3.  Higher me fulltime
+    independent variables that influence grades
+3.  Perform the same analysis to determine if the intervention has
+    better results in the fall semesters
 
 Future Work
 -----------
